@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    padding: 1rem;
+    background-color:#2899EB;
+    color: #34D8EB;
+}
+.navbar a {
+    text-decoration: none;
+    font-weight: bold;
+}
+.container {
+    margin: 2rem;
+}
+
+.home    {
+    display: flex;
+}
+
+.home .nama {
+    text-align: left;
+    margin: auto;
+    padding-right: 4rem;
+}
+
+.home .nama h2{
+    margin-bottom: 1rem;
+}
+
+.gambar img {
+    border-radius: 5%;
+}
+.section {
+    margin-top: 1rem;
+}
+
+.img {
+    margin: 1rem;
+}
+
+.container .home img {
+    width: 23rem;
+}
+
+.primer {
+    color: #3329F0;
+}
+.second {
+    color:#34D8EB;
+}
