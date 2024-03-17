@@ -1,0 +1,30 @@
+/* komen pada css */
+h1 {
+  color: black;
+}
+
+h1:hover {
+  color: red;
+}
+.green {
+  color: greenyellow;
+}
+.red {
+  color: red;
+}
+
+input[type="text"] {
+  color: red;
+}
+
+.button {
+  background-color: green;
+  display: inline;
+  border-radius: 5px;
+  padding: 5px;
+  border: solid 1px;
+  color: white;
+}
+.button:hover {
+  background-color: red;
+}
