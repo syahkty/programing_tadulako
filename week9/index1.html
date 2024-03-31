@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Events</title>
+  </head>
+  <body>
+    <div id="listenerObject">Object yang mendengarkan event</div>
+    <input type="text" id="check-number" />
+    <button id="btn-check">Check Number</button>
+    <script>
+      const btnCheck = document.getElementById("btn-check");
+      const inputNumber = document.getElementById("check-number");
+      const customEvent1 = new Event("check-ganjil");
+      const customEvent2 = new Event("check-genap");
+
+      document.addEventListener("check-ganjil", () => {
+        console.log("Nilainya Benar Ganjil");
+      });
+
+      document.addEventListener("check-genap", () => {
+        console.log("Nilainya Benar Genap");
+      });
+
+      btnCheck.addEventListener("click", () => {
+        if (Number(inputNumber.value) % 2 == 0) {
+          document.dispatchEvent(customEvent2);
+        } else {
+          document.dispatchEvent(customEvent1);
+        }
+      });
+    </script>
+  </body>
+</html>
